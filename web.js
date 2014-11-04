@@ -16,6 +16,9 @@ app.get('/', function(req, res){
   res.render('index', {
     domain: domain
   });
+  res.render('impressum', {
+    domain: domain
+  });
 });
 
 app.listen(port, function() {
