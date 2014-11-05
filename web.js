@@ -18,6 +18,12 @@ app.get('/', function(req, res){
   });
 });
 
+app.get('/impressum', function(req, res){
+	  res.render('impressum', {
+	    domain: domain
+	  });
+	});
+
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
